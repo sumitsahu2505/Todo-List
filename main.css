@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: rgb(44, 91, 91);
+}
+.main-container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.ta-wrapper{
+    background-color: #a8afb8;
+    color: white;
+    padding: 40px;
+    border: 4px;
+    box-shadow: 0 0 7px 7px rgb(0 0 0 / 20%);
+    min-height: 300px;
+}
+.heading h1{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+.input-wrapper{
+    margin-bottom: 10px;
+}
+.input-wrapper input{
+    outline: none;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    color: white;
+    width: 500px;
+}
+.input-wrapper button{
+    background-color: #e55c8a;
+    color: white;
+    border: 0;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.todo-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+}
+.todo-item input{
+    background-color: transparent;
+    border: navajowhite;
+    color: none;
+    outline: none;
+}
+.todo-item i{
+    color: #e55c8a;
+    background-color: transparent;
+    border: 1px;
+    padding: 6px;
+    cursor: pointer;
+    transition: 0.25 ease-in-out;
+    margin-left: 5px;
+}
+.todo-item button :hover{
+    color: white;
+}
+.done{
+    text-decoration: line-through;
+}
+.fa-x{
+    padding: 6px 8px !important;
+}
